@@ -1,3 +1,4 @@
+# added this comment
 import matplotlib.pyplot as plt
 import tensorflow as tf
 import numpy as np
@@ -20,6 +21,7 @@ img_size_flat = img_size * img_size
 img_shape = (img_size, img_size)
 num_class = 10
 
+# plot 9 images
 def plot_images(images, cls_true, cls_pred=None):
     assert len(images) == len(cls_true) == 9
 
@@ -211,3 +213,4 @@ plot_weights()
 plt.show()
 print_confusion_matrix()
 
+# close the session?
